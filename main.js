@@ -62,11 +62,11 @@ reset.addEventListener('click', function(){
 
 
 function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
+    let date = new Date();
+    let h = date.getHours(); // 0 - 23
+    let m = date.getMinutes(); // 0 - 59
+    let s = date.getSeconds(); // 0 - 59
+    let session = "AM";
     
     if(h == 0){
         h = 12;
@@ -81,7 +81,7 @@ function showTime(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
     
-    var time = h + ":" + m + ":" + s + " " + session;
+   let time = h + ":" + m + ":" + s + " " + session;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
     
